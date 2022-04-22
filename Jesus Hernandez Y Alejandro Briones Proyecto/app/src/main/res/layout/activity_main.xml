@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/libros"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/et_codigo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="@string/codigo_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_descripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:ems="10"
+        android:hint="@string/descripcion_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_codigo" />
+
+    <EditText
+        android:id="@+id/et_precio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:ems="10"
+        android:hint="@string/precio_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_descripcion" />
+
+    <Button
+        android:id="@+id/btn_alta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_alta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_precio" />
+
+    <Button
+        android:id="@+id/btn_baja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_baja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alta" />
+
+    <Button
+        android:id="@+id/btn_buscar_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_buscar_codigo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_baja" />
+
+    <Button
+        android:id="@+id/btn_buscar_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_buscar_descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscar_codigo" />
+
+    <Button
+        android:id="@+id/btn_actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_actualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscar_descripcion" />
+
+    <Button
+        android:id="@+id/libro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="libro1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_actualizar" />
+
+    <Button
+        android:id="@+id/libro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Libro2"
+        app:layout_constraintStart_toEndOf="@+id/libro"
+        app:layout_constraintTop_toBottomOf="@+id/btn_actualizar" />
+
+    <Button
+        android:id="@+id/libro3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Libro3"
+        app:layout_constraintStart_toEndOf="@+id/libro2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_actualizar" />
+
+    <Button
+        android:id="@+id/libro4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="Libro4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/libro" />
+
+    <Button
+        android:id="@+id/libro5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Libro5"
+        app:layout_constraintStart_toEndOf="@+id/libro4"
+        app:layout_constraintTop_toBottomOf="@+id/libro2" />
+
+    <Button
+        android:id="@+id/libro6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Libro6"
+        app:layout_constraintStart_toEndOf="@+id/libro5"
+        app:layout_constraintTop_toBottomOf="@+id/libro3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

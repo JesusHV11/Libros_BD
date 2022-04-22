@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Galeria de Libros</string>
+    <string name="codigo_hint">Titulo</string>
+    <string name="descripcion_hint">"Editorial "</string>
+    <string name="precio_hint">"Autor "</string>
+    <string name="btn_alta">"Agregar libro "</string>
+    <string name="btn_baja">"Eliminar libro "</string>
+    <string name="btn_buscar_codigo">"Buscar por titulo "</string>
+    <string name="btn_buscar_descripcion">"Buscar por editorial"</string>
+    <string name="btn_actualizar">Actualizar Libro</string>
+</resources>
